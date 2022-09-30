@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <dimen name="size_image">150dp</dimen>
+    <dimen name="margin_bottom_infoTextView">5dp</dimen>
+    <dimen name="margin_right_logo">10dp</dimen>
+    <dimen name="padding_body">10dp</dimen>
+    <dimen name="height_vote_toolbar">24dp</dimen>
+    <dimen name="width_toolbar_images">24dp</dimen>
+</resources>

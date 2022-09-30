@@ -4,113 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Texto 1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Texto 2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+<!--
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:padding="@dimen/padding_body"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Texto 3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Texto 3.1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Texto 3.2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:background="@color/teal_200"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Texto 4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/size_image"
+            android:layout_height="@dimen/size_image"
+            android:layout_marginRight="@dimen/margin_right_logo"
+            app:srcCompat="@drawable/zoo"/>
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Texto 4.1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+                android:text="@string/fecha"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Texto 4.2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+                android:text="@string/titulo"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contenido"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
         </LinearLayout>
-
     </LinearLayout>
+    -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Texto 5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:padding="@dimen/padding_body"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_image"
+            android:layout_marginRight="@dimen/margin_right_logo"
+            app:srcCompat="@drawable/zoo"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- Titulo tipo bold-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contenido"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
+
+            <!-- images 24dp-->
+            <!-- usar tint para las estrellas y el corazon -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_vote_toolbar">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/zoo"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/zoo"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/zoo"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/zoo"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/zoo" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_vote_toolbar">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/zoo"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
