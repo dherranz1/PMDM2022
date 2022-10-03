@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="@dimen/padding_body"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_image"
+            android:layout_marginRight="@dimen/margin_right_logo"
+            app:srcCompat="@drawable/candy"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- Titulo tipo bold-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contenido"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_bottom_infoTextView"/>
+
+            <!-- images 24dp-->
+            <!-- usar tint para las estrellas y el corazon -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/star_group"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_vote_toolbar">
+
+                    <!-- Stars group -->
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/star_group_one"
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        android:tint="@color/gray"
+                        app:srcCompat="@drawable/star_rate"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/star_group_two"
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        android:tint="@color/gray"
+                        app:srcCompat="@drawable/star_rate"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/star_group_three"
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        android:tint="@color/gray"
+                        app:srcCompat="@drawable/star_rate"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/star_group_four"
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        android:tint="@color/gray"
+                        app:srcCompat="@drawable/star_rate"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/star_group_five"
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        android:tint="@color/gray"
+                        app:srcCompat="@drawable/star_rate" />
+                    <!-- End Stars group -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_vote_toolbar">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/favorite"
+                        android:layout_width="@dimen/width_toolbar_images"
+                        android:layout_height="match_parent"
+                        android:tint="@color/gray"
+                        app:srcCompat="@drawable/favorite_fill"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
