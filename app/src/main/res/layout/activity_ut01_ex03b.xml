@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut01.ex03b.Ut01Ex03bActivity">
+
+    <TextView
+        android:id="@+id/textoE3b1"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textoE3b2"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textoE3b1"/>
+
+    <TextView
+        android:id="@+id/textoE3b3"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textoE3b2"
+        />
+
+    <TextView
+        android:id="@+id/textoE3b4"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoE3b3"
+        android:layout_toEndOf="@id/textoE3b2"/>
+
+    <TextView
+        android:id="@+id/textoE3b5"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoE3b4"
+        android:layout_toEndOf="@id/textoE3b2"/>
+
+    <TextView
+        android:id="@+id/textoE3b6"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textoE3b3"/>
+
+    <TextView
+        android:id="@+id/textoE3b7"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoE3b6"
+        android:layout_toEndOf="@id/textoE3b3"/>
+
+    <TextView
+        android:id="@+id/textoE3b8"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoE3b6"
+        android:layout_toEndOf="@id/textoE3b7"/>
+
+    <TextView
+        android:id="@+id/textoE3b9"
+        android:text="@string/texto3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textoE3b8"
+        android:layout_toEndOf="@id/textoE3b8"/>
+
+</RelativeLayout>

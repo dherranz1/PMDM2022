@@ -3,4 +3,5 @@
     <string name="fecha">01/01/2022</string>
     <string name="titulo">Este es el título</string>
     <string name="contenido">Contenido del texto que debe tener 2 líneas como máximo. Alargando el texto para comprobar que funciona.</string>
+    <string name="texto3b">Texto</string>
 </resources>

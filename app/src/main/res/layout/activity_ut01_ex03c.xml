@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_body"
+    tools:context=".ut01.ex03c.Ut01Ex03cActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgcandy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_image"
+        app:srcCompat="@drawable/candy" />
+
+
+    <!-- Titulo tipo bold-->
+    <TextView
+        android:id="@+id/titlecandy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgcandy"
+        android:layout_marginBottom="@dimen/margin_bottom_infoTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/titulo"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <!--android:text="@string/contenido"-->
+    <TextView
+        android:id="@+id/contentcandy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlecandy"
+        android:layout_marginBottom="@dimen/margin_bottom_infoTextView"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="@tools:sample/lorem/random" />
+
+    <!-- images 24dp-->
+    <!-- usar tint para las estrellas y el corazon -->
+
+
+    <LinearLayout
+        android:id="@+id/star_group"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_vote_toolbar"
+        android:layout_below="@id/contentcandy"
+        android:orientation="horizontal">
+
+        <!-- Stars group -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star_group_one"
+            android:layout_width="@dimen/width_toolbar_images"
+            android:layout_height="match_parent"
+            android:tint="@color/gray"
+            app:srcCompat="@drawable/star_rate" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star_group_two"
+            android:layout_width="@dimen/width_toolbar_images"
+            android:layout_height="match_parent"
+            android:tint="@color/gray"
+            app:srcCompat="@drawable/star_rate" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star_group_three"
+            android:layout_width="@dimen/width_toolbar_images"
+            android:layout_height="match_parent"
+            android:tint="@color/gray"
+            app:srcCompat="@drawable/star_rate" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star_group_four"
+            android:layout_width="@dimen/width_toolbar_images"
+            android:layout_height="match_parent"
+            android:tint="@color/gray"
+            app:srcCompat="@drawable/star_rate" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star_group_five"
+            android:layout_width="@dimen/width_toolbar_images"
+            android:layout_height="match_parent"
+            android:tint="@color/gray"
+            app:srcCompat="@drawable/star_rate" />
+        <!-- End Stars group -->
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/favorite"
+        android:layout_width="@dimen/width_toolbar_images"
+        android:layout_height="@dimen/width_toolbar_images"
+        android:tint="@color/gray"
+        android:layout_below="@id/contentcandy"
+        android:layout_alignRight="@id/contentcandy"
+        app:srcCompat="@drawable/favorite_fill" />
+
+
+</RelativeLayout>
