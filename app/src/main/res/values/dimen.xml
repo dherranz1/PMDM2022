@@ -6,4 +6,5 @@
     <dimen name="padding_body">10dp</dimen>
     <dimen name="height_vote_toolbar">24dp</dimen>
     <dimen name="width_toolbar_images">24dp</dimen>
+    <dimen name="title_size">30sp</dimen>
 </resources>
