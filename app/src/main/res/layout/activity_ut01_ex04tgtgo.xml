@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ut01.ex04TGTGO.presentation.Ut01Ex04TGTGO">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/gray">
+
+        <!-- Product image -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/candy">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <!-- Product units -->
+        <TextView
+            android:id="@+id/product_units"
+            android:layout_width="wrap_content"
+            android:background="@color/yellow"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            tools:text="3 unidades" />
+
+        <!-- Product favorite -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            tools:src="@drawable/star">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <!-- logo -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            tools:src="@drawable/star">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/logo"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:text="Cheema frutería - General Ricardos - Otro texto" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/product_name_tgtgo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Recogida hoy: 00:14 - 23:59" />
+
+
+        <!-- INFO -->
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <!-- Score image -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/score_img"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                tools:src="@drawable/star">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <!-- score text -->
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@id/score_img"
+                android:gravity="center"
+                tools:text="3,7" />
+
+            <!-- separator text -->
+            <TextView
+                android:id="@+id/separator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/score_text"
+                android:gravity="center"
+                tools:text="|" />
+
+            <!-- distance text -->
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/separator"
+                android:gravity="center"
+                tools:text="4,1 km" />
+
+
+            <!-- Price text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                tools:text="2,99 €" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
