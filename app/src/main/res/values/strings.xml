@@ -4,4 +4,6 @@
     <string name="titulo">Este es el título</string>
     <string name="contenido">Contenido del texto que debe tener 2 líneas como máximo. Alargando el texto para comprobar que funciona.</string>
     <string name="texto3b">Texto</string>
+    <string name="product_name_tgtgo">Pack Sorpresa</string>
+    <string name="description_tgtgo">Recogida....</string>
 </resources>
