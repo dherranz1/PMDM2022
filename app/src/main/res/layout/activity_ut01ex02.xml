@@ -101,7 +101,7 @@
                     android:layout_height="@dimen/height_vote_toolbar">
 
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/favorite"
+                        android:id="@+id/favorite_icon"
                         android:layout_width="@dimen/width_toolbar_images"
                         android:layout_height="match_parent"
                         android:tint="@color/gray"
