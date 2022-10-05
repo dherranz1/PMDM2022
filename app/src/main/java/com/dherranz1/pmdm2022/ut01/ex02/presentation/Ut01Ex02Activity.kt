@@ -1,15 +1,11 @@
 package com.dherranz1.pmdm2022.ut01.ex02.presentation
 
-import android.content.Context
-import android.graphics.Color
-import android.graphics.ColorFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
-import androidx.core.widget.ImageViewCompat
 import com.dherranz1.pmdm2022.R
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.view.iterator
@@ -52,7 +48,7 @@ class Ut01Ex02Activity : AppCompatActivity() {
     }
 
     private fun initComponents(){
-        findViewById<AppCompatImageView>(R.id.favorite).setOnClickListener {
+        findViewById<AppCompatImageView>(R.id.favorite_icon).setOnClickListener {
             toggleFavorite()
         }
         initStarGroup()
@@ -96,7 +92,7 @@ class Ut01Ex02Activity : AppCompatActivity() {
 
     private fun toggleFavorite(){
 
-        val favorite = findViewById<AppCompatImageView>(R.id.favorite)
+        val favorite = findViewById<AppCompatImageView>(R.id.favorite_icon)
 
         if (isFavorite) {
             tintView(favorite, R.color.gray)
