@@ -4,4 +4,10 @@
     <string name="titulo">Este es el título</string>
     <string name="contenido">Contenido del texto que debe tener 2 líneas como máximo. Alargando el texto para comprobar que funciona.</string>
     <string name="texto3b">Texto</string>
+
+    <string name="form_label_name">Nombre</string>
+    <string name="form_label_surname">Apellido</string>
+    <string name="form_label_save">Guardar</string>
+
+
 </resources>
